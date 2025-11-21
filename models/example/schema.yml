@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: source             # your source name in dbt
+    database: DEV            # Snowflake database
+    schema: APUS              # Snowflake schema
+    tables:
+      - name: PRODUCT
+        
