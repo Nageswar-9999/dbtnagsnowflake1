@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_src
+    database: DEV
+    schema: APUS
+    tables:
+      - name: employee_src
