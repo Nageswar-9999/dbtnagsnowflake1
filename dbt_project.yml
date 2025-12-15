@@ -1,4 +1,3 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
@@ -35,7 +34,7 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
-    
+
     src:
       +materialized: view     # all source models become views
 
@@ -43,4 +42,11 @@ models:
       +materialized: view     # staging models become views
 
     transform:
-      +materialized: table 
+      +materialized: table
+seeds:
+  dbtnagsnowflake1:
+    customers_seed:
+      +schema: APUS
+      +quote_columns: true
+flags:
+  require_generic_test_arguments_property: true

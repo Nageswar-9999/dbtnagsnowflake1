@@ -6,3 +6,8 @@ sources:
     schema: APUS
     tables:
       - name: product_tbl
+  - name: source1
+    database: DEV
+    schema: APUS
+    tables:
+      - name: CUSTOMER_SEED
